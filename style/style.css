@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
     
 }
 :root{
@@ -12,128 +13,150 @@
 }
 
 /* HEADER */
-#inicio_principal_banner {
-    height: 700px;
-    background-image: url(https://cdn.pixabay.com/photo/2017/07/22/20/40/girl-2529907_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* codigos generales */
+
+#inicio_boton1 {
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#inicio_boton2{
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 header {
+    width: 100%;
+    height: 700px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 2rem;
-    width: 100%;
-}
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container a img {
-    padding-left: 50px;
-    max-width: 40rem;
-    width: 12rem;
-  }
-  
-  .navi {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .navi ul {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .navi li a {
-    margin: 30px;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  #inicio_donate {
-    background-color: #ffc814;
-    margin: 15px;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #inicio_donate:hover {
-    background-color: white;
-    transition: 0.5s;
-  }
-  
-  .openmenu,
-  .closemenu {
-    display: none;
-  }
-  
-  #inicio_banner_texto {
-    color: white;
-    width: 90%;
-    display: flex;
     justify-content: center;
     align-items: start;
-    flex-direction: column;
-    top: 90px;
-    height: 600px;
-    font-size: 80px;
-    font-weight: 700;
-  }
-  
-  #inicio_banner_texto p {
-    width: 400px;
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 10px;
-  }
-  
-  #inicio_botones {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    width: 400px;
-  }
-  
-  #inicio_boton1 a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  #inicio_boton2 a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  #inicio_boton1 {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #inicio_boton2 {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 15px;
-    background: #ffc814;
-    border: none;
-    margin-left: 30px;
-  }
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://cdn.pixabay.com/photo/2017/07/22/20/40/girl-2529907_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & a img {
+            padding-left: 50px;
+            max-width: 40rem;
+            width: 12rem;
+        }
+
+        /* & closemenu{ } */
+
+        & .navi {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+
+            & li {
+                margin-inline: 0.6rem;
+                min-width: max-content;
+
+                & a {
+                    font-size: 1rem;
+                    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            & #inicio_donate {
+                background-color: #ffc814;
+                margin: 15px;
+                padding: 10px;
+                font-size: 1rem;
+                font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+            }
+
+            & #inicio_donate:hover {
+                background-color: white;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    & #inicio_banner_texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+        & p:first-of-type {
+            color: white;
+            /* font-size: 60px; */
+            font-size: 2rem;
+            font-size: clamp(2rem, 1.4rem + 3vw, 5rem);
+            font-weight: 700;
+
+        }
+
+        & p:last-of-type {
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+
+        & #inicio_botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: 400px;
+            padding-left: 50px;
+            padding-top: 20px;
+            gap: 20px;
+
+            & #inicio_boton1 {
+                font-weight: 700;
+                font-size: 14px;
+                border: none;
+                & a {
+                        text-decoration: none;
+                        color: var(--color-black);
+                }
+            }
+
+            & #inicio_boton2 {
+                font-weight: 700;
+                font-size: 14px;
+                background: #ffc814;
+                border: none;
+
+                & a {
+                        text-decoration: none;
+                        color: var(--color-black);
+                    }
+            }
+        }
+    }
+
+
+    & .openmenu,
+    .closemenu {
+        display: none;
+    }
+
+}
+
 /* MAIN */
 #proyecto-main{
     display: flex;
