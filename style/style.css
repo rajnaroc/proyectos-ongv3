@@ -164,6 +164,9 @@ header {
     padding-left: 30px;
     width: 600px;
 }
+.proyecto-info h2{
+    font-weight: bold;
+}
 .proyecto-info_2{
     display: flex;
     flex-direction: column;
@@ -212,10 +215,24 @@ header {
     border-radius: 5px;
 }
 #proyecto-paginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-top: 20px;
+}
+#proyecto-paginacion span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
 }
 #proyecto-paginacion span:hover{
     background-color: #ffc814;
+    cursor: pointer;
 }
 /* FOOTER */
     .numbers p {
