@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 :root{
     --color-yellow:#ffc814;
@@ -130,116 +131,85 @@ header {
 }
 /* AQUI EMPIEZA LO MIO --------------------------- */
 #proyecto-principal{
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    gap: 90px;
 }
-#proyecto-principal-texto{
+#proyecto-principio{
     display: flex;
-    height: 100%;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    font-size: 20px;
 }
-#proyecto-principal-texto p{
-    width: 80%;
-    font-size: 15px;
-    letter-spacing: 1px;
-    height: 20vh;
-    padding: 10px;
-}
-#proyecto-principal-img{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-#proyecto-principal-img img{
-    width: 100%;
-    z-index: -1;
+#proyecto-principio h2{
+    padding: 20px;
+    color: #ffc814;
 }
 #proyecto-texto-imagen{
-    position: absolute;
-    background-color: var(--color-black);
-    color: var(--color-white);
-    height: 300px;
-    width: 300px;
-    bottom: 25%;
-    right: 10%;
-    font-size: 40px;
-    text-align: center;
-    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90% ;
+}
+#proyecto-imagen-pequeña{
+    overflow: hidden;
+    width: 50%;
+    height: 60vh;
+    border-radius: 20px;
+}
+#proyecto-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+#proyecto-lista span{
+    font-size: 30px;
+}
+#proyecto-texto-imagen2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
-}
-#proyecto-texto-imagen a{
-    color: var(--color-yellow);
-}
-#proyecto-principal-texto h1{
-    margin: 30px;
-}
-#boton1{
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    width: 150px;
-    height: 30px;
+    width: 90%;
     font-size: 20px;
-    background-color: var(--color-black);
-    color: var(--color-yellow);
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
+    text-align: center;
 }
-#boton2{
-    position: absolute;
-    bottom: 0;
-    right: 30%;
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-    background-color: var(--color-yellow);
-    color: var(--color-black);
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
+#proyecto-texto-imagen2 h2{
+    color: #ffc814;
 }
-#proyecto-imagen2{
+#proyecto-imagen-grande{
+    width: 100%;
+}
+#proyecto-imagen-grande img{
+    width: 80%;
+}
+#proyecto-botones{
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 20vh;
 }
-#proyecto-imagen2 span{
-    font-size: 15px;
-    color: gray;
+#gb{
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    height: 40%;
+    width: 30%;
+    border: none;
+    cursor: pointer;
 }
-#proyecto-imagen2 img{
-    width: 500px;
-}
-#proyecto-imagen1{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-#proyecto-imagen1 span{
-    font-size: 15px;
-    color: gray;
-}
-#proyecto-imagen1 img{
-    width: 500px;
-}
-h2 a{
-    color: var(--color-yellow);
-}
-h2{
-    letter-spacing: 1px;
-}
-p a{
-    font-weight: bold;
+#dn{
+    background-color: #ffc814;
+    color:#0d0d0d;
+    height: 40%;
+    width: 30%;
+    border: none;
+    cursor: pointer;
 }
 /* AQUI ACABA LO MIO -------------------------------------------- */
 /* FOOTER */
